@@ -18,6 +18,7 @@ you can use it like:
  
 2.JTTimeTask base on mono  Update func; It is a repeat by custom time Integer;
 每step秒下发定时器
+
         JTTimeTask timeTask = JTTimeTask.Init(OnTime, 2);
         timeTask.begin();//begin
         timeTask.stop();//no delate just stop
@@ -25,14 +26,18 @@ you can use it like:
         
 3.
 延迟
+
 delayTime to call:
+
 JTInvoke.Get(gameObject).StartTime(delayTime, () =>
         {
             //
 
         });
 倒计时
+
 Countdown every second:
+
 JTInvoke.Get(gameObject).StartReverseTime(CountInt, num =>
         {
             Debug.Log(num);
