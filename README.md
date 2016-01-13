@@ -1,8 +1,9 @@
 # TimerManagerForUnity3d
 tips: TimerManagerForUnity3d is Singleton Pattern，if you use it end, please call Clear() ;
 you can use it like:
-1.JTInvokeTask base on mono Invoke func
-指定次数定时器
+1.JTInvokeTask base on mono Invoke func;
+指定次数定时器;
+
         JTInvokeTask.InitOnce(3, true, () =>
         {
             Debug.Log("InitOnce=" + (count));
@@ -13,7 +14,7 @@ you can use it like:
             Debug.Log("InitCount=" + (count++));
 
         });
-        JTInvokeTask.InitRepeat....。。
+        JTInvokeTask.InitRepeat....;
  
 2.JTTimeTask base on mono  Update func; It is a repeat by custom time Integer;
 每step秒下发定时器
@@ -27,8 +28,7 @@ you can use it like:
 delayTime to call:
 JTInvoke.Get(gameObject).StartTime(delayTime, () =>
         {
-            //一个怪物挂机结束删除英雄，等的处理
-            land.DeleteHero();
+            //
 
         });
 倒计时
